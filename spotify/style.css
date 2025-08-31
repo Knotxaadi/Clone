@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+:root {
+    --gray-color: rgb(27, 27, 27);
+    --gray-color-light: rgba(83, 83, 83, 0.349);
+}
+
+body {
+    font-family: capriola, monospace;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    background-color: coral;
+    border-radius: 90px;
+}
+
+nav {
+    margin: 10px 20px;
+    box-sizing: border-box;
+}
+
+.innerid {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    align-items: center;
+}
+
+.input2 {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+
+
+.homebtn button {
+    background-color: var(--gray-color);
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.homebtn i {
+    transform: scale(2);
+
+}
+
+.inputbar {
+    background-color: var(--gray-color);
+    border-radius: 50px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.inputbar input {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 5px 70px 5px 0px;
+    cursor: pointer;
+}
+
+.innerid button {
+    border: none;
+    border-radius: 30px;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.innerid a {
+    text-decoration: none;
+    color: rgb(167, 167, 167);
+}
+
+.midsec {
+    margin: 10px;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 80vh;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+.sidesec {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+}
+
+.yourlibhead {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.yourlibhead button {
+    background-color: var(--gray-color-light);
+    padding: 5px 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bolder;
+}
+
+.option {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.option button {
+    color: white;
+    font-weight: bold;
+    background-color: var(--gray-color-light);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.nowplaying {
+    margin: 10px;
+}
+
+.youalbum {
+    padding: 10px;
+}
+
+.youalbum ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.youalbum ul li {
+    margin: 5px 0px;
+}
+
+.youalbum ul li button {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 15px;
+    align-items: center;
+    padding-right: 20px;
+    border: none;
+}
+
+.youalbum ul li button:hover {
+    background-color: rgba(211, 211, 211, 0.185);
+}
+
+.btndiv {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.youalbum ul li button img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    color: white;
+}
+
+.content h4 {
+    font-size: 15px;
+}
+
+.content p {
+    color: gray;
+    font-weight: bold;
+}
+
+
+.albumsec {
+    overflow: auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+    padding: 10px 20px;
+}
+
+.bgcolor {
+    background-color: rgb(255, 166, 0);
+    height: 200px;
+    width: 100%;
+    top: -30%;
+    left: 0;
+    filter: blur(200px);
+    position: absolute;
+    z-index: -1;
+
+}
+
+.selectcat {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+
+.selectcat button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: bold;
+    background-color: var(--gray-color-light);
+    color: white;
+}
+
+.selectcat button:hover {
+    background-color: white;
+    color: black;
+}
+
+.recentlyplayed {
+    margin: 15px 10px;
+}
+
+.recentlyplayed ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.recentlyplayed ul li button {
+    border: none;
+    background-color: var(--gray-color-light);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.recentlyplayed ul li button:hover {
+    background-color: rgba(151, 151, 151, 0.329);
+    transition: all 0.3s ease-in-out;
+}
+
+.rpbtn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.replay {
+    position: relative;
+}
+
+.playy {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+.playy-none {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.playy a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(0, 255, 0);
+    border: none;
+    border-radius: 70px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.rpbtn img {
+    width: 55px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.Madeforyou {
+    margin: 45px 10px;
+}
+
+.dailymix {
+    margin: 5px;
+}
+
+.dailymix ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.dailymix ul li {
+    width: 16%;
+}
+
+.dailymix ul button {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.daily {
+    position: relative;
+}
+
+.playyd {
+    position: absolute;
+    bottom: 30%;
+    right: 7%;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.playyd-none {
+    opacity: 0;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.playyd a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(0, 255, 0);
+    border: none;
+    border-radius: 70px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.dailymix ul button:hover {
+    background-color: var(--gray-color-light);
+}
+
+.dmbtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    color: lightgray;
+    font-size: 17px;
+}
+
+
+.dmbtn img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.footer {
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footercon {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footercon h1 {
+    font-size: 18px;
+}
+
+.footercon .company {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.company a {
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+}
+
+.icons {
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    height: 20%;
+}
+
+.icons a {
+    text-decoration: none;
+    color: white;
+    border-radius: 80px;
+    padding: 10px;
+    background-color: var(--gray-color-light);
+}
+
+.playmusic {
+    margin: 5px 10px;
+}
+
+.music {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+.pminfo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.pminfo img {
+    width: 10%;
+    border-radius: 10px;
+}
+
+.pminfo p {
+    font-size: 14px;
+    color: gray;
+}
+
+.pminfo .title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pmsetting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.pmsetting a,
+.volume a {
+    text-decoration: none;
+    color: rgb(165, 165, 165);
+    padding: 5px;
+}
+
+#play,
+#pause {
+    background-color: white;
+    color: black;
+    border-radius: 70px;
+}
+
+.play-none {
+    display: none;
+}
+
+
+.timebar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 16px;
+    color: lightgray;
+}
+
+.timebar input {
+    width: 300px;
+    height: 2px;
+}
+
+.volume {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume input {
+    width: 20%;
+    height: 2px;
+}
+
+.vol-mute {
+    display: none;
+}
