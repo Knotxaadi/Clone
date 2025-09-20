@@ -1,0 +1,4 @@
+export const albuminfo = {
+    title: 'Crazyyyy',
+    img: 'https://mosaic.scdn.co/640/ab67616d00001e0232341bd45324d9c6deca737fab67616d00001e026b01530825529db0bee75515ab67616d00001e02bde397b17347eda35a3e1350ab67616d00001e02e5551dc0359b1ce82ef078f4',
+};
